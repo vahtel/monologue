@@ -6,8 +6,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require monologue/bootstrap/bootstrap.min
-//= require monologue/bootstrap/bootstrap-datepicker
-//= require monologue/bootstrap/bootstrap-datepicker-fr
 //= require tinymce-jquery
 //= require_tree .
