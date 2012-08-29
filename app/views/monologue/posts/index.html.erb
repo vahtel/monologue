@@ -1,5 +1,12 @@
-<%= render @posts %>
+<div class="workspace_public">
+	
+	<div class="container-fluid home">
+			<div class="container space30 blog">
+			<%= render @posts %>
 
-<% if @page %>
-	<%= render :partial => "pagination" %>
-<% end %>
+			<% if @page %>
+				<%= render :partial => "pagination" %>
+			<% end %>
+		</div>
+	</div>
+</div>	
