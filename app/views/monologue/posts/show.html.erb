@@ -3,11 +3,11 @@
 	<div class="container-fluid home">
 			<div class="container space30 blog">
 		<% content_for :title do %>
-		  <%= @revision.title %>
+		 <title> <%= @revision.title %> </title>
 		<% end %>
 
-		<% content_for :meta_description do %>
-		  <%= truncate(strip_tags(@revision.content), :length => 155) %>
+		<% content_for :meta do %>
+		<meta name="description" content="<%= truncate(strip_tags(@revision.content), :length => 155) %>">
 		<% end %>
 
 		<article>
