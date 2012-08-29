@@ -4,10 +4,10 @@
     <h1><%= link_to revision.title, revision.full_url %></h1>
     <time datetime="<%= revision.published_at %>">
       <%= revision.published_at.to_date.to_formatted_s(:short) %>
-    </time>
-   <a href="<%= revision.full_url + "#disqus_thread" %>"></a>
+    </time><a href="<%= revision.full_url + "#disqus_thread" %>"></a>
   </header>
 
-  <p><%= raw truncate(revision.content), :length => 10000) %></p>
+  <p><%= raw revision.content %></p>
+
 
 </section>
