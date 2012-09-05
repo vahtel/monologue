@@ -13,8 +13,9 @@
 		<article>
 		  <header><h1><%= link_to @revision.title, @revision.full_url %></h1></header>
 		  <div class="posted">
+			<span class="author"><%= @revision.user.name %></span>
 		    <time datetime="<%= @revision.published_at %>">
-		     <%= @revision.user.name %> <%= @revision.published_at.to_date.to_formatted_s(:short) %>
+		     <%= @revision.published_at.to_date.to_formatted_s(:short) %>
 		    </time>
 		   <a href="<%= @revision.full_url + "#disqus_thread" %>"></a>
 		  </div>
